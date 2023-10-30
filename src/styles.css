@@ -37,3 +37,21 @@
   outline: none;
   padding: 10px;
 }
+
+.fab {
+  border-radius: 100%;
+  border: none;
+  bottom: 30px;
+  padding: 20px;
+  position: fixed;
+  right: 30px;
+  background-color: #1d3557;
+  color: whitesmoke;
+}
+.cross {
+  font-size: 30px;
+}
+.fab:hover {
+  background-color: #1d355796;
+  color: whitesmoke;
+}
