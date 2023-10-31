@@ -20,10 +20,10 @@ export const FabAddNew = () => {
   };
 
   return (
-    <>
-      <button className='fab' onClick={handleClickNew}>
+    <div>
+      <button className='fab ' style={{ cursor: "pointer" }} onClick={handleClickNew}>
         <i className='fas fa-plus cross'></i>
       </button>
-    </>
+    </div>
   );
 };

@@ -6,6 +6,7 @@ import { localizer, getMessagesES } from "../../helpers";
 import { useState } from "react";
 import { useUiStore, useCalendarStore } from "../../hooks";
 import { FabAddNew } from "../components/FabAddNew";
+import { FabDelete } from "../components/FabDelete";
 
 export const CalendarPage = () => {
   const { toggleModal } = useUiStore();
@@ -28,12 +29,12 @@ export const CalendarPage = () => {
       backgroundColor: "#1d3557",
       color: "white",
       inset: 0,
+      height: "100%",
       position: "relative",
       margin: "auto",
       opacity: "0.8",
       borderRadius: "0.25em",
-      marginTop: "5px",
-      height: "",
+      marginTop: "3px",
     };
 
     return {
@@ -62,6 +63,7 @@ export const CalendarPage = () => {
         onView={onViewChanged}
       />
       <FabAddNew />
+      <FabDelete />
     </>
   );
 };

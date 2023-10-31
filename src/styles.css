@@ -47,11 +47,26 @@
   right: 30px;
   background-color: #1d3557;
   color: whitesmoke;
+  z-index: 998;
 }
 .cross {
-  font-size: 30px;
+  font-size: 20px;
 }
-.fab:hover {
-  background-color: #1d355796;
+.fab:hover,
+.fab-danger:hover {
+  opacity: 50%;
+}
+
+.fab-danger {
+  border-radius: 100%;
+  border: none;
+  bottom: 30px;
+
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  left: 30px;
+  background-color: red;
   color: whitesmoke;
+  z-index: 997;
 }
