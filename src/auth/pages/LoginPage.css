@@ -69,3 +69,12 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+.btnDisabled {
+  color: gray;
+  width: 45%;
+  border-radius: 0.4rem;
+  padding: 1.5%;
+  border: none;
+  cursor: wait;
+}
