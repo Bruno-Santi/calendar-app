@@ -25,7 +25,7 @@ export const LoginPage = () => {
   const { status, errorMessage, errorRegisterMessage } = useSelector((state) => state.auth);
   const registerSubmit = (e) => {
     e.preventDefault();
-    if (!isFormValid) return;
+
     startRegister({
       name: registerName,
       email: registerEmail,

@@ -9,7 +9,6 @@ export const AppRouter = () => {
   // const authStatus = "not-authenticated";
   useEffect(() => {
     checkAuthToken();
-    console.log(status);
   }, []);
   if (status === "checking") {
     return (

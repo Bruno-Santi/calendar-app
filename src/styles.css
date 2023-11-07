@@ -77,6 +77,13 @@
   height: 100vh;
   background-color: #1d3557;
 }
+.spinner-container-calendar {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d355790;
+}
 
 .spin {
   position: fixed;
