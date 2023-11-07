@@ -3,7 +3,7 @@ import { LoginPage } from "../auth";
 import { CalendarPage } from "../calendar";
 import { useAuthStore } from "../hooks";
 import { useEffect } from "react";
-
+import "../styles.css";
 export const AppRouter = () => {
   const { status, checkAuthToken } = useAuthStore();
   // const authStatus = "not-authenticated";
@@ -13,9 +13,9 @@ export const AppRouter = () => {
   }, []);
   if (status === "checking") {
     return (
-      <div className='text-center m-auto'>
-        <div className='spinner-border' role='status'>
-          <span className='sr-only'>Loading...</span>
+      <div className='spinner-container'>
+        <div className='spinner' style={{ margin: "0", position: "relative", inset: 0 }}>
+          <div className='spinner-border spin' role='status'></div>
         </div>
       </div>
     );

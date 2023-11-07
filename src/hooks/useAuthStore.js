@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { calendarApi } from "../api";
 import { clearErrorMessage, onChecking, onLogOut, onLogOutRegister, onLogin } from "../store/auth/authSlice";
-import Swal from "sweetalert2";
+
 export const useAuthStore = () => {
   const { state, status, user, errorMessage } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -63,6 +63,7 @@ export const useAuthStore = () => {
     dispatch(onLogOut());
   };
   return {
+    startLogOut,
     state,
     user,
     errorMessage,
@@ -70,6 +71,5 @@ export const useAuthStore = () => {
     startRegister,
     checkAuthToken,
     status,
-    startLogOut,
   };
 };
