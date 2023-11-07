@@ -5,6 +5,7 @@ import {
   onSetActiveEvent,
   onUpdateEvent,
   onLoadEvents,
+  onLogOutCalendar,
 } from "../store/calendar/calendarSlice";
 import { calendarApi } from "../api/index";
 import { convertEventsDate } from "../helpers/convertEventsDate";
@@ -50,6 +51,7 @@ export const useCalendarStore = () => {
       throw new Error("Error al cargar eventos");
     }
   };
+
   return {
     events,
     activeEvent,
